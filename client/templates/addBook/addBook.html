@@ -1,0 +1,8 @@
+<template name="addBook">
+  {{#if currentUser}}
+    {{> addBookForm}}
+  {{else}}
+    You need to be logged in to Use this:
+    {{> loginButtons}}
+  {{/if}}
+</template>

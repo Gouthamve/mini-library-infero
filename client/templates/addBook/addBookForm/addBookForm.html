@@ -1,0 +1,14 @@
+<template name="addBookForm">
+  <div class="container">
+    <div class="col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10 col-lg-offset-1">
+      {{#autoForm collection="Books" id="insertBookForm" type="insert"}}
+        <fieldset>
+          <legend>Add a Book</legend>
+          {{> afQuickField name='name'}}
+          {{> afQuickField name='description' rows=6}}
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      {{/autoForm}}
+    </div>
+  </div>
+</template>
